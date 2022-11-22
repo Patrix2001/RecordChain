@@ -43,10 +43,7 @@ contract TransactionRegistry is Ownable {
     }
 
     modifier isOnTransaction() {
-        require(
-            getTransactionLearner() == address(0),
-            "Already enroll course"
-        );
+        require(getTransactionLearner() == address(0), "Already enroll course");
         _;
     }
 
@@ -54,7 +51,14 @@ contract TransactionRegistry is Ownable {
         string memory _courseName,
         uint256 _credits,
         address _recipient
-    ) public payable minimumPay(_credits) isUser(2) isOnTransaction() returns (bool) {
+    )
+        public
+        payable
+        minimumPay(_credits)
+        isUser(2)
+        isOnTransaction
+        returns (bool)
+    {
         bool active = checkCourse(_recipient, _courseName, _credits);
         require(active, "Course is not active");
 
@@ -89,9 +93,13 @@ contract TransactionRegistry is Ownable {
         return recordChain.getTransaction(transactionId);
     }
 
-    // function collectCredits(address _transaction) public onlyOwner returns (bool) {
-    //     return recordChain.getTransaction(_transaction);
-    // }
+    function balance() public view onlyOwner returns (uint256) {
+        return payable(address(this)).balance;
+    }
+
+    function transferBalance() public payable onlyOwner returns (bool) {
+        return true;
+    }
 
     function getTransactionTrainer()
         public
@@ -207,6 +215,10 @@ contract TransactionCourse {
             creationTime,
             receivalTime
         );
+    }
+
+    function balance() public view returns (uint256) {
+        return payable(address(this)).balance;
     }
 
     function checkCertified() public view returns (bool) {
