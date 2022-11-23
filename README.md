@@ -39,6 +39,6 @@ Kartu Prakerja is a semi-social assistance program for fresh graduates, job seek
 - `createTransaction` : deploys smart contract of Transaction including `value`.
 - `sendCredit` : sends reward to learner and pay the course with `value` of owner.
 - `requestCredit` : sends back `value` to owner
-- `payCourse` : exchange the credits of course
+- `payCourse` : sends value from learner to course of trainer
 - `issueCertificate` : certifies Learner on the course
 - `proofCertificate` : check certificate based on storage and address of the learner.
