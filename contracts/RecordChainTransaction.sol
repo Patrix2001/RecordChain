@@ -96,7 +96,7 @@ contract TransactionRegistry is Ownable {
         bytes32 id = keccak256(
             abi.encodePacked(msg.sender, _recipient, _courseName)
         );
-        require(checkTransaction(id), "Already enroll course");
+        require(!checkTransaction(id), "Already enroll course");
 
         address newTransaction = address(
             (new TransactionCourse){value: _credits + REWARD}(

@@ -182,13 +182,12 @@ contract RecordChainStorage {
         bool _isActive,
         Constant.CourseLearningOutcome[] memory learningOutcome
     ) public returns (bool) {
-        Course memory course = courseDetails[_courseId];
-        course.trainer = _trainer;
-        course.name = _name;
-        course.institute = trainerDetails[_trainer].institute;
-        course.instructor = userDetails[_trainer].name;
-        course.price = _price;
-        course.isActive = _isActive;
+        courseDetails[_courseId].trainer = _trainer;
+        courseDetails[_courseId].name = _name;
+        courseDetails[_courseId].institute = trainerDetails[_trainer].institute;
+        courseDetails[_courseId].instructor = userDetails[_trainer].name;
+        courseDetails[_courseId].price = _price;
+        courseDetails[_courseId].isActive = _isActive;
         uint256 count = learningOutcome.length;
         for (uint256 i = 0; i < count; i++) {
             courseDetails[_courseId].learningOutcomes.push(
@@ -426,13 +425,22 @@ contract RecordChainStorage {
         issuerName = userDetails[course.trainer].name;
         courseName = course.name;
         institute = course.institute;
+        learningOutcomes = course.learningOutcomes;
         uint256 learnOutcome = course.learningOutcomes.length;
         for (uint256 i = 0; i < learnOutcome; i++) {
-            learningOutcomes[i].name = course.learningOutcomes[i].name;
-            learningOutcomes[i].weight = course.learningOutcomes[i].weight;
-            learningOutcomes[i].score = certificate.score[i];
-            learningOutcomes[i].credits = course.learningOutcomes[i].credits;
+            learningOutcomes[i] = Constant.CourseLearningOutcome({
+                name: course.learningOutcomes[i].name,
+                weight: course.learningOutcomes[i].weight,
+                score: certificate.score[i],
+                credits: course.learningOutcomes[i].credits
+            });
         }
+        // for (uint256 i = 0; i < learnOutcome; i++) {
+        //     learningOutcomes[i].name = course.learningOutcomes[i].name;
+        //     learningOutcomes[i].weight = course.learningOutcomes[i].weight;
+        //     learningOutcomes[i].score = certificate.score[i];
+        //     learningOutcomes[i].credits = course.learningOutcomes[i].credits;
+        // }
         issuanceTime = certificate.issuanceTime;
 
         return (
