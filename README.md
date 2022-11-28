@@ -15,7 +15,7 @@ Kartu Prakerja is a semi-social assistance program for fresh graduates, job seek
 - We have implemented smart contract addressing the issue of storing course data and certificate data verified by various parties in the blockchain.
 
 #### Use Case Diagram
-![architecture-Page-16 (1)](https://user-images.githubusercontent.com/61679822/203302990-6957dcc4-5d21-45c7-9476-d03776c536b7.jpg)
+![architecture-Page-16](https://user-images.githubusercontent.com/61679822/204191998-f672698d-8915-44da-8ab5-c90761f697df.png)
 
 
 **Owner** : as a deployer of the smart contract, adds users and becomes a funder to finance courses for learners.
