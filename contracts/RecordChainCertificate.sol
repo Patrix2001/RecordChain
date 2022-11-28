@@ -3,48 +3,63 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 import "./RecordChainStorage.sol";
+import "./Constant.sol";
 
 contract RecordChainCertificate {
-    /* Library Certificate: Create Certificate, Learner-Certificate
-    Proof Certificate */
-    bytes32[] private certificateId;
+    /* Function Certificate: Create Certificate, Learner-Certificate
+    Generate Certificate, Proof Certificate */
 
+    // State variables
+    bytes32[] private certificateId;
+    RecordChainStorage recordChain;
+
+    // Events
     event NewCertificate(
         bytes32 certificateId,
         address indexed candidateAddress,
         address indexed issuerAddress
     );
 
-    modifier isUser(uint256 role) {
+    // Modifiers
+    modifier isUser(string memory role) {
         require(
-            recordChain.getUserRole(msg.sender) == role,
+            recordChain.getUserRole(msg.sender) ==
+                keccak256(abi.encodePacked(role)),
             "Only User Permissioned"
         );
         _;
     }
 
-    RecordChainStorage recordChain;
-
+    // constructor, initialize state variables within constructor
     constructor(address _recordChainAddress) {
         recordChain = RecordChainStorage(_recordChainAddress);
     }
 
+    // public functions
     function issueCertificate(
         address _candidateAddress,
-        string memory _candidateName,
-        string memory _issuerName,
-        string memory _courseName
-    ) public isUser(1) returns (bool) {
+        bytes32 _courseId,
+        uint256[] memory _score
+    ) public isUser("TRAINER") returns (bool) {
         require(msg.sender != address(0));
-
-        bytes32 id = keccak256(abi.encodePacked(_candidateAddress, msg.sender));
+        (
+            ,
+            string memory name,
+            ,
+            ,
+            ,
+            ,
+            Constant.CourseLearningOutcome[] memory learningOutcomes
+        ) = recordChain.getCourseById(_courseId);
+        require(learningOutcomes.length == _score.length, "Invalid score");
+        bytes32 id = keccak256(
+            abi.encodePacked(_candidateAddress, msg.sender, name)
+        );
         bool success = recordChain.setCertificate(
             id,
             _candidateAddress,
-            msg.sender,
-            _candidateName,
-            _issuerName,
-            _courseName,
+            _courseId,
+            _score,
             block.timestamp
         );
 
@@ -56,37 +71,34 @@ contract RecordChainCertificate {
     function getCertificateLearner()
         public
         view
-        isUser(2)
+        isUser("LEARNER")
+        returns (
+            bytes32[] memory certId,
+            address[] memory candidateAddress,
+            string[] memory courseName,
+            string[] memory institute,
+            uint256[] memory issuanceTime
+        )
+    {
+        return recordChain.getCertificateByLearner(msg.sender);
+    }
+
+    function getCertificateId(bytes32 _certificateId)
+        public
+        view
         returns (
             bytes32 certId,
             address candidateAddress,
-            address issuerAddress,
             string memory candidateName,
+            address issuerAddress,
             string memory issuerName,
             string memory courseName,
+            string memory institute,
+            Constant.CourseLearningOutcome[] memory learningOutcomes,
             uint256 issuanceTime
         )
     {
-        require(msg.sender != address(0));
-
-        (
-            certId,
-            candidateAddress,
-            issuerAddress,
-            candidateName,
-            issuerName,
-            courseName,
-            issuanceTime
-        ) = recordChain.getCertificateByLearner(msg.sender);
-        return (
-            certId,
-            candidateAddress,
-            issuerAddress,
-            candidateName,
-            issuerName,
-            courseName,
-            issuanceTime
-        );
+        return recordChain.generateCertificate(_certificateId);
     }
 
     function proofCertificate(bytes32 _certificateId, address _learner)

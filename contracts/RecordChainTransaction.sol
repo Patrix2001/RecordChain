@@ -5,46 +5,73 @@ pragma solidity >=0.7.0 <0.9.0;
 import "./Ownable.sol";
 import "./RecordChainStorage.sol";
 
-uint256 constant reward = 1e18;
+uint256 constant REWARD = 1e18;
 
 contract TransactionRegistry is Ownable {
     /* Library Transaction: Create Contract TransactionCourse, 
     List Transaction, Transaction-Trainer, Transaction-Learner */
+
+    // State variables
     address private recordAddress;
     bytes32[] private transactionId;
+    uint256 private limit; // max attempt course
+    RecordChainStorage recordChain;
 
+    // Events
     event NewTransaction(
         bytes32 transactionId,
         address indexed sender,
         address indexed recipient
     );
 
-    modifier isUser(uint256 role) {
+    // Modifiers
+    modifier isUser(string memory role) {
         require(
-            recordChain.getUserRole(msg.sender) == role,
+            recordChain.getUserRole(msg.sender) ==
+                keccak256(abi.encodePacked(role)),
             "Only User Permissioned"
         );
         _;
     }
 
-    RecordChainStorage recordChain;
-
-    constructor(address _recordChainAddress) payable {
-        recordChain = RecordChainStorage(_recordChainAddress);
-        recordAddress = _recordChainAddress;
-    }
-
-    modifier minimumPay(uint256 _credits) {
+    modifier isMaxAttempt() {
         require(
-            msg.value >= _credits + reward ||
-                address(this).balance >= _credits + reward
+            limit > recordChain.countCourseByLearner(msg.sender),
+            "You have reached the course registration limit"
         );
         _;
     }
 
-    modifier isOnTransaction() {
-        require(getTransactionLearner() == address(0), "Already enroll course");
+    modifier minimumPay(uint256 _credits) {
+        require(address(this).balance >= _credits + REWARD);
         _;
+    }
+
+    // constructor, initialize state variables within constructor
+    constructor(address _recordChainAddress, uint256 _limit) payable {
+        recordChain = RecordChainStorage(_recordChainAddress);
+        recordAddress = _recordChainAddress;
+        limit = _limit;
+    }
+
+    // public functions
+    function balance() public view onlyOwner returns (uint256) {
+        return payable(address(this)).balance;
+    }
+
+    function requestBalance() public onlyOwner returns (bool) {
+        (bool paid, ) = owner.call{value: address(this).balance}("");
+        require(paid, "Failed to send Ether");
+        return paid;
+    }
+
+    function transferBalance() public payable onlyOwner returns (bool) {
+        return true;
+    }
+
+    function setLimit(uint256 _limit) public onlyOwner returns (bool) {
+        limit = _limit;
+        return true;
     }
 
     function createTransaction(
@@ -53,32 +80,42 @@ contract TransactionRegistry is Ownable {
         address _recipient
     )
         public
-        payable
         minimumPay(_credits)
-        isUser(2)
-        isOnTransaction
+        isUser("LEARNER")
+        isMaxAttempt
         returns (bool)
     {
-        bool active = checkCourse(_recipient, _courseName, _credits);
-        require(active, "Course is not active");
+        bytes32 courseId = keccak256(
+            abi.encodePacked(_recipient, _courseName, _credits)
+        );
+        (address trainer, , , , , bool isActive, ) = recordChain.getCourseById(
+            courseId
+        );
+        require(isActive, "Course is not active");
 
         bytes32 id = keccak256(
             abi.encodePacked(msg.sender, _recipient, _courseName)
         );
+        require(checkTransaction(id), "Already enroll course");
 
-        bool success = recordChain.setTransaction{value: _credits + reward}(
-            recordAddress,
-            id,
-            _courseName,
-            _credits,
-            owner,
-            msg.sender,
-            _recipient,
-            false,
-            block.timestamp,
-            0
+        address newTransaction = address(
+            (new TransactionCourse){value: _credits + REWARD}(
+                recordAddress,
+                courseId,
+                owner,
+                msg.sender,
+                trainer,
+                false,
+                block.timestamp,
+                0
+            )
         );
-
+        bool success = recordChain.setTransaction(
+            newTransaction,
+            id,
+            courseId,
+            msg.sender
+        );
         emit NewTransaction(id, msg.sender, _recipient);
         transactionId.push(id);
         return success;
@@ -93,18 +130,10 @@ contract TransactionRegistry is Ownable {
         return recordChain.getTransaction(transactionId);
     }
 
-    function balance() public view onlyOwner returns (uint256) {
-        return payable(address(this)).balance;
-    }
-
-    function transferBalance() public payable onlyOwner returns (bool) {
-        return true;
-    }
-
     function getTransactionTrainer()
         public
         view
-        isUser(1)
+        isUser("TRAINER")
         returns (address[] memory)
     {
         address[] memory transaction = new address[](transactionId.length);
@@ -112,42 +141,56 @@ contract TransactionRegistry is Ownable {
         return transaction;
     }
 
-    function getTransactionLearner() public view isUser(2) returns (address) {
+    function getTransactionLearner()
+        public
+        view
+        isUser("LEARNER")
+        returns (address[] memory)
+    {
         return recordChain.getTransactionByLearner(msg.sender);
     }
 
-    function checkCourse(
-        address _trainer,
-        string memory _name,
-        uint256 _price
-    ) private view returns (bool) {
-        bytes32 courseId = keccak256(abi.encodePacked(_trainer, _name, _price));
-        (, , , , bool isActive) = recordChain.getCourseById(courseId);
-        return isActive;
+    function checkTransaction(bytes32 _transactionId)
+        private
+        view
+        returns (bool)
+    {
+        for (uint256 i = 0; i < transactionId.length; i++) {
+            if (transactionId[i] == _transactionId) {
+                return true;
+            }
+        }
+        return false;
     }
 }
 
 contract TransactionCourse {
-    /* Collect Credits to Owner, Send Credits to Trainer, Send Reward to Learner */
-    string private courseName;
+    /* Collect Credits to Owner, Send Credits to Trainer, Send reward to Learner */
+    bytes32 private courseId;
     address private owner;
     address private sender;
     address private recipient;
     bool private isPaid;
     uint256 private creationTime;
     uint256 private receivalTime;
-    uint256 public credits = 999e18;
+    uint256 private credits = 999e18;
+    bool private isRequested;
+    bool private isSentReward;
+    RecordChainStorage recordChain;
 
     modifier isAlreadyPaid() {
         require(!isPaid, "Complete Transaction");
         _;
     }
 
-    RecordChainStorage recordChain;
+    modifier isAlreadyRequest() {
+        require(!isRequested, "You already request");
+        _;
+    }
 
     constructor(
         address _recordChainAddress,
-        string memory _courseName,
+        bytes32 _courseId,
         address _owner,
         address _sender,
         address _recipient,
@@ -156,7 +199,7 @@ contract TransactionCourse {
         uint256 _receivalTime
     ) payable {
         recordChain = RecordChainStorage(_recordChainAddress);
-        courseName = _courseName;
+        courseId = _courseId;
         owner = _owner;
         sender = _sender;
         recipient = _recipient;
@@ -166,25 +209,29 @@ contract TransactionCourse {
     }
 
     function sendCredit() external payable isAlreadyPaid {
+        require(msg.data.length == 0);
         require(checkCertified(), "Need Certify");
-
-        (bool sent, ) = sender.call{value: reward}("");
-        require(sent, "Failed to send Ether");
-
+        if (!isSentReward) {
+            (bool sent, ) = sender.call{value: REWARD}("");
+            require(sent, "Failed to send Ether");
+            isSentReward = sent;
+        }
         (bool paid, ) = recipient.call{value: address(this).balance}("");
         require(paid, "Failed to send Ether");
-
         isPaid = paid;
         receivalTime = block.timestamp;
     }
 
-    function requestCredit() external payable isAlreadyPaid {
-        credits = address(this).balance - reward;
+    function requestCredit() external payable isAlreadyPaid isAlreadyRequest {
+        require(msg.data.length == 0);
+        credits = address(this).balance - REWARD;
         (bool sent, ) = owner.call{value: address(this).balance}("");
         require(sent, "Failed to send Ether");
+        isRequested = sent;
     }
 
     function payCourse() external payable isAlreadyPaid {
+        require(msg.data.length == 0);
         require(msg.value == credits, "Credits Not Enough");
         (bool paid, ) = recipient.call{value: msg.value}("");
         require(paid, "Failed to send Ether");
@@ -197,7 +244,7 @@ contract TransactionCourse {
         public
         view
         returns (
-            string memory,
+            bytes32,
             address,
             address,
             address,
@@ -207,7 +254,7 @@ contract TransactionCourse {
         )
     {
         return (
-            courseName,
+            courseId,
             owner,
             sender,
             recipient,
@@ -221,8 +268,9 @@ contract TransactionCourse {
         return payable(address(this)).balance;
     }
 
-    function checkCertified() public view returns (bool) {
-        bytes32 id = keccak256(abi.encodePacked(sender, recipient));
+    function checkCertified() private view returns (bool) {
+        (, string memory name, , , , , ) = recordChain.getCourseById(courseId);
+        bytes32 id = keccak256(abi.encodePacked(sender, recipient, name));
         return recordChain.checkCertificate(id, sender);
     }
 }
