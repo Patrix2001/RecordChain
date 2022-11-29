@@ -12,54 +12,54 @@
 <!-- 1 -->
 <g id="node1" class="node">
 <title>1</title>
-<polygon fill="#f2f2f2" stroke="black" points="1885.47,-1206.1 1885.47,-1339.7 2042.98,-1339.7 2042.98,-1206.1 1885.47,-1206.1"/>
-<text text-anchor="middle" x="1964.23" y="-1323.1" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="1964.23" y="-1306.3" font-family="Times,serif" font-size="14.00">CourseLearningOutcome</text>
-<text text-anchor="middle" x="1964.23" y="-1289.5" font-family="Times,serif" font-size="14.00">ContractConstant.sol</text>
-<polyline fill="none" stroke="black" points="1885.47,-1281.3 2042.98,-1281.3 "/>
-<text text-anchor="start" x="1893.47" y="-1264.7" font-family="Times,serif" font-size="14.00">name: string</text>
-<text text-anchor="start" x="1893.47" y="-1247.9" font-family="Times,serif" font-size="14.00">weight: uint256</text>
-<text text-anchor="start" x="1893.47" y="-1231.1" font-family="Times,serif" font-size="14.00">score: uint256</text>
-<text text-anchor="start" x="1893.47" y="-1214.3" font-family="Times,serif" font-size="14.00">credits: uint256</text>
+<polygon fill="#f2f2f2" stroke="black" points="1717.22,-1206.1 1717.22,-1339.7 1927.24,-1339.7 1927.24,-1206.1 1717.22,-1206.1"/>
+<text text-anchor="middle" x="1822.23" y="-1323.1" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="1822.23" y="-1306.3" font-family="Times,serif" font-size="14.00">CourseLearningOutcome</text>
+<text text-anchor="middle" x="1822.23" y="-1289.5" font-family="Times,serif" font-size="14.00">RecordChaincontractsConstant.sol</text>
+<polyline fill="none" stroke="black" points="1717.22,-1281.3 1927.24,-1281.3 "/>
+<text text-anchor="start" x="1725.22" y="-1264.7" font-family="Times,serif" font-size="14.00">name: string</text>
+<text text-anchor="start" x="1725.22" y="-1247.9" font-family="Times,serif" font-size="14.00">weight: uint256</text>
+<text text-anchor="start" x="1725.22" y="-1231.1" font-family="Times,serif" font-size="14.00">score: uint256</text>
+<text text-anchor="start" x="1725.22" y="-1214.3" font-family="Times,serif" font-size="14.00">credits: uint256</text>
 </g>
 <!-- 0 -->
 <g id="node2" class="node">
 <title>0</title>
-<polygon fill="#f2f2f2" stroke="black" points="2023.32,-1401.9 2023.32,-1460.3 2157.14,-1460.3 2157.14,-1401.9 2023.32,-1401.9"/>
-<text text-anchor="middle" x="2090.23" y="-1443.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Library&gt;&gt;</text>
-<text text-anchor="middle" x="2090.23" y="-1426.9" font-family="Times,serif" font-size="14.00">Constant</text>
-<text text-anchor="middle" x="2090.23" y="-1410.1" font-family="Times,serif" font-size="14.00">ContractConstant.sol</text>
+<polygon fill="#f2f2f2" stroke="black" points="1869.22,-1401.9 1869.22,-1460.3 2079.24,-1460.3 2079.24,-1401.9 1869.22,-1401.9"/>
+<text text-anchor="middle" x="1974.23" y="-1443.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Library&gt;&gt;</text>
+<text text-anchor="middle" x="1974.23" y="-1426.9" font-family="Times,serif" font-size="14.00">Constant</text>
+<text text-anchor="middle" x="1974.23" y="-1410.1" font-family="Times,serif" font-size="14.00">RecordChaincontractsConstant.sol</text>
 </g>
 <!-- 1&#45;&gt;0 -->
 <g id="edge1" class="edge">
 <title>1&#45;&gt;0</title>
-<path fill="none" stroke="black" d="M2017.66,-1340.14C2032.11,-1358.05 2047.23,-1376.8 2059.92,-1392.52"/>
-<polygon fill="black" stroke="black" points="2059.94,-1392.55 2066.82,-1394.71 2067.47,-1401.89 2060.59,-1399.73 2059.94,-1392.55"/>
+<path fill="none" stroke="black" d="M1886.69,-1340.14C1904.28,-1358.21 1922.71,-1377.15 1938.1,-1392.97"/>
+<polygon fill="black" stroke="black" points="1938.41,-1393.29 1945.46,-1394.8 1946.77,-1401.89 1939.72,-1400.38 1938.41,-1393.29"/>
 </g>
 <!-- 2 -->
 <g id="node3" class="node">
 <title>2</title>
-<polygon fill="#f2f2f2" stroke="black" points="3998.76,-725.1 3998.76,-933.9 4483.7,-933.9 4483.7,-725.1 3998.76,-725.1"/>
-<text text-anchor="middle" x="4241.23" y="-917.3" font-family="Times,serif" font-size="14.00">Ownable</text>
-<text text-anchor="middle" x="4241.23" y="-900.5" font-family="Times,serif" font-size="14.00">ContractOwnable.sol</text>
-<polyline fill="none" stroke="black" points="3998.76,-892.3 4483.7,-892.3 "/>
-<text text-anchor="start" x="4006.76" y="-875.7" font-family="Times,serif" font-size="14.00">Public:</text>
-<text text-anchor="start" x="4006.76" y="-858.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;owner: address</text>
-<polyline fill="none" stroke="black" points="3998.76,-850.7 4483.7,-850.7 "/>
-<text text-anchor="start" x="4006.76" y="-834.1" font-family="Times,serif" font-size="14.00">Public:</text>
-<text text-anchor="start" x="4006.76" y="-817.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; OwnershipRenounced(previousOwner: address)</text>
-<text text-anchor="start" x="4006.76" y="-800.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; OwnershipTransferred(previousOwner: address, newOwner: address)</text>
-<text text-anchor="start" x="4006.76" y="-783.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; onlyOwner()</text>
-<text text-anchor="start" x="4006.76" y="-766.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;constructor()</text>
-<text text-anchor="start" x="4006.76" y="-750.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;transferOwnership(newOwner: address) &lt;&lt;onlyOwner&gt;&gt;</text>
-<text text-anchor="start" x="4006.76" y="-733.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;renounceOwnership() &lt;&lt;onlyOwner&gt;&gt;</text>
+<polygon fill="#f2f2f2" stroke="black" points="4039.76,-725.1 4039.76,-933.9 4524.7,-933.9 4524.7,-725.1 4039.76,-725.1"/>
+<text text-anchor="middle" x="4282.23" y="-917.3" font-family="Times,serif" font-size="14.00">Ownable</text>
+<text text-anchor="middle" x="4282.23" y="-900.5" font-family="Times,serif" font-size="14.00">RecordChaincontractsOwnable.sol</text>
+<polyline fill="none" stroke="black" points="4039.76,-892.3 4524.7,-892.3 "/>
+<text text-anchor="start" x="4047.76" y="-875.7" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="4047.76" y="-858.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;owner: address</text>
+<polyline fill="none" stroke="black" points="4039.76,-850.7 4524.7,-850.7 "/>
+<text text-anchor="start" x="4047.76" y="-834.1" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="4047.76" y="-817.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; OwnershipRenounced(previousOwner: address)</text>
+<text text-anchor="start" x="4047.76" y="-800.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;event&gt;&gt; OwnershipTransferred(previousOwner: address, newOwner: address)</text>
+<text text-anchor="start" x="4047.76" y="-783.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; onlyOwner()</text>
+<text text-anchor="start" x="4047.76" y="-766.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;constructor()</text>
+<text text-anchor="start" x="4047.76" y="-750.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;transferOwnership(newOwner: address) &lt;&lt;onlyOwner&gt;&gt;</text>
+<text text-anchor="start" x="4047.76" y="-733.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;renounceOwnership() &lt;&lt;onlyOwner&gt;&gt;</text>
 </g>
 <!-- 3 -->
 <g id="node4" class="node">
 <title>3</title>
 <polygon fill="#f2f2f2" stroke="black" points="0,-109.7 0,-368.9 1552.46,-368.9 1552.46,-109.7 0,-109.7"/>
 <text text-anchor="middle" x="776.23" y="-352.3" font-family="Times,serif" font-size="14.00">RecordChainCertificate</text>
-<text text-anchor="middle" x="776.23" y="-335.5" font-family="Times,serif" font-size="14.00">ContractRecordChainCertificate.sol</text>
+<text text-anchor="middle" x="776.23" y="-335.5" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainCertificate.sol</text>
 <polyline fill="none" stroke="black" points="0,-327.3 1552.46,-327.3 "/>
 <text text-anchor="start" x="8" y="-310.7" font-family="Times,serif" font-size="14.00">Private:</text>
 <text text-anchor="start" x="8" y="-293.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;certificateId: bytes32[]</text>
@@ -78,64 +78,64 @@
 <!-- 3&#45;&gt;0 -->
 <g id="edge3" class="edge">
 <title>3&#45;&gt;0</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1064.5,-368.99C1363.64,-518.65 1819.61,-795.32 2052.23,-1180.4 2073.29,-1215.26 2083.79,-1331 2087.97,-1391.89"/>
-<polygon fill="black" stroke="black" points="2084.48,-1392.13 2088.64,-1401.88 2091.47,-1391.67 2084.48,-1392.13"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M1026.51,-368.92C1298.37,-522.82 1722.36,-807.19 1936.23,-1180.4 1974.58,-1247.32 1978.17,-1340.15 1976.66,-1391.7"/>
+<polygon fill="black" stroke="black" points="1973.16,-1391.62 1976.29,-1401.75 1980.16,-1391.88 1973.16,-1391.62"/>
 </g>
 <!-- 5 -->
 <g id="node12" class="node">
 <title>5</title>
-<polygon fill="#f2f2f2" stroke="black" points="2137.68,-515.1 2137.68,-1143.9 3708.78,-1143.9 3708.78,-515.1 2137.68,-515.1"/>
-<text text-anchor="middle" x="2923.23" y="-1127.3" font-family="Times,serif" font-size="14.00">RecordChainStorage</text>
-<text text-anchor="middle" x="2923.23" y="-1110.5" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="2137.68,-1102.3 3708.78,-1102.3 "/>
-<text text-anchor="start" x="2145.68" y="-1085.7" font-family="Times,serif" font-size="14.00">Private:</text>
-<text text-anchor="start" x="2145.68" y="-1068.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;userDetails: mapping(address=&gt;User)</text>
-<text text-anchor="start" x="2145.68" y="-1052.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;courseDetails: mapping(bytes32=&gt;Course)</text>
-<text text-anchor="start" x="2145.68" y="-1035.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;certificateCourse: mapping(bytes32=&gt;Certificate)</text>
-<text text-anchor="start" x="2145.68" y="-1018.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;transactionCourse: mapping(bytes32=&gt;address)</text>
-<text text-anchor="start" x="2145.68" y="-1001.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;instituteDetails: mapping(bytes32=&gt;Institute)</text>
-<text text-anchor="start" x="2145.68" y="-984.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;learnerDetails: mapping(address=&gt;Learner)</text>
-<text text-anchor="start" x="2145.68" y="-968.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;trainerDetails: mapping(address=&gt;Trainer)</text>
-<polyline fill="none" stroke="black" points="2137.68,-959.9 3708.78,-959.9 "/>
-<text text-anchor="start" x="2145.68" y="-943.3" font-family="Times,serif" font-size="14.00">Public:</text>
-<text text-anchor="start" x="2145.68" y="-926.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;payable&gt;&gt; setTransaction(_transactionAddress: address, _transactionId: bytes32, _courseId: bytes32, _sender: address): bool</text>
-<text text-anchor="start" x="2145.68" y="-909.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setUser(_userAddress: address, _name: string, _phone: string, _role: bytes32): bool</text>
-<text text-anchor="start" x="2145.68" y="-892.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getUser(_userAddress: address): (name: string, phone: string, role: bytes32)</text>
-<text text-anchor="start" x="2145.68" y="-876.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getUserRole(_userAddress: address): bytes32</text>
-<text text-anchor="start" x="2145.68" y="-859.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setInstitute(_instituteId: bytes32, _name: string, _category: string): bool</text>
-<text text-anchor="start" x="2145.68" y="-842.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getInstitute(_instituteIds: bytes32[]): (string[], string[])</text>
-<text text-anchor="start" x="2145.68" y="-825.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getInstituteById(_instituteId: bytes32): (name: string, category: string, trainer: address[])</text>
-<text text-anchor="start" x="2145.68" y="-808.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setTrainer(_instituteId: bytes32, _userAddress: address): bool</text>
-<text text-anchor="start" x="2145.68" y="-792.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTrainer(_trainerAddress: address): (institute: string, courseId: bytes32[], transactionId: bytes32[])</text>
-<text text-anchor="start" x="2145.68" y="-775.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;checkTrainer(_instituteId: bytes32, _userAddress: address): bool</text>
-<text text-anchor="start" x="2145.68" y="-758.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getLearner(_learnerAddress: address): (courseId: bytes32[], transactionId: bytes32[], certificateId: bytes32[])</text>
-<text text-anchor="start" x="2145.68" y="-741.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setCourse(_courseId: bytes32, _trainer: address, _name: string, _price: uint256, _isActive: bool, learningOutcome: Constant.CourseLearningOutcome[]): bool</text>
-<text text-anchor="start" x="2145.68" y="-724.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;updateCourse(_courseId: bytes32, _isActive: bool): bool</text>
-<text text-anchor="start" x="2145.68" y="-708.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourse(_courseIds: bytes32[]): (address[], string[], string[], string[], uint256[], bool[])</text>
-<text text-anchor="start" x="2145.68" y="-691.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseById(_courseId: bytes32): (trainer: address, name: string, institute: string, instructor: string, price: uint256, isActive: bool, learningOutcomes: Constant.CourseLearningOutcome[])</text>
-<text text-anchor="start" x="2145.68" y="-674.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByTrainer(_trainer: address): (string[], string[], string[], uint256[], bool[])</text>
-<text text-anchor="start" x="2145.68" y="-657.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByLearner(_learner: address): (string[], string[], string[], uint256[], bool[])</text>
-<text text-anchor="start" x="2145.68" y="-640.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;countCourseByLearner(_learner: address): uint256</text>
-<text text-anchor="start" x="2145.68" y="-624.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransaction(_transactionId: bytes32[]): address[]</text>
-<text text-anchor="start" x="2145.68" y="-607.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransactionByTrainer(_trainer: address): address[]</text>
-<text text-anchor="start" x="2145.68" y="-590.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransactionByLearner(_learner: address): address[]</text>
-<text text-anchor="start" x="2145.68" y="-573.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setCertificate(_certId: bytes32, _candidateAddress: address, _courseId: bytes32, _score: uint256[], _issuanceTime: uint256): bool</text>
-<text text-anchor="start" x="2145.68" y="-556.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;generateCertificate(_certificateId: bytes32): (certId: bytes32, candidateAddress: address, candidateName: string, issuerAddress: address, issuerName: string, courseName: string, institute: string, learningOutcomes: Constant.CourseLearningOutcome[], issuanceTime: uint256)</text>
-<text text-anchor="start" x="2145.68" y="-540.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCertificateByLearner(_learner: address): (bytes32[], address[], string[], string[], uint256[])</text>
-<text text-anchor="start" x="2145.68" y="-523.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;checkCertificate(_certificateId: bytes32, _learner: address): bool</text>
+<polygon fill="#f2f2f2" stroke="black" points="2258.68,-515.1 2258.68,-1143.9 3829.78,-1143.9 3829.78,-515.1 2258.68,-515.1"/>
+<text text-anchor="middle" x="3044.23" y="-1127.3" font-family="Times,serif" font-size="14.00">RecordChainStorage</text>
+<text text-anchor="middle" x="3044.23" y="-1110.5" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="2258.68,-1102.3 3829.78,-1102.3 "/>
+<text text-anchor="start" x="2266.68" y="-1085.7" font-family="Times,serif" font-size="14.00">Private:</text>
+<text text-anchor="start" x="2266.68" y="-1068.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;userDetails: mapping(address=&gt;User)</text>
+<text text-anchor="start" x="2266.68" y="-1052.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;courseDetails: mapping(bytes32=&gt;Course)</text>
+<text text-anchor="start" x="2266.68" y="-1035.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;certificateCourse: mapping(bytes32=&gt;Certificate)</text>
+<text text-anchor="start" x="2266.68" y="-1018.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;transactionCourse: mapping(bytes32=&gt;address)</text>
+<text text-anchor="start" x="2266.68" y="-1001.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;instituteDetails: mapping(bytes32=&gt;Institute)</text>
+<text text-anchor="start" x="2266.68" y="-984.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;learnerDetails: mapping(address=&gt;Learner)</text>
+<text text-anchor="start" x="2266.68" y="-968.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;trainerDetails: mapping(address=&gt;Trainer)</text>
+<polyline fill="none" stroke="black" points="2258.68,-959.9 3829.78,-959.9 "/>
+<text text-anchor="start" x="2266.68" y="-943.3" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="2266.68" y="-926.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;payable&gt;&gt; setTransaction(_transactionAddress: address, _transactionId: bytes32, _courseId: bytes32, _sender: address): bool</text>
+<text text-anchor="start" x="2266.68" y="-909.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setUser(_userAddress: address, _name: string, _phone: string, _role: bytes32): bool</text>
+<text text-anchor="start" x="2266.68" y="-892.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getUser(_userAddress: address): (name: string, phone: string, role: bytes32)</text>
+<text text-anchor="start" x="2266.68" y="-876.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getUserRole(_userAddress: address): bytes32</text>
+<text text-anchor="start" x="2266.68" y="-859.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setInstitute(_instituteId: bytes32, _name: string, _category: string): bool</text>
+<text text-anchor="start" x="2266.68" y="-842.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getInstitute(_instituteIds: bytes32[]): (string[], string[])</text>
+<text text-anchor="start" x="2266.68" y="-825.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getInstituteById(_instituteId: bytes32): (name: string, category: string, trainer: address[])</text>
+<text text-anchor="start" x="2266.68" y="-808.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setTrainer(_instituteId: bytes32, _userAddress: address): bool</text>
+<text text-anchor="start" x="2266.68" y="-792.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTrainer(_trainerAddress: address): (institute: string, courseId: bytes32[], transactionId: bytes32[])</text>
+<text text-anchor="start" x="2266.68" y="-775.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;checkTrainer(_instituteId: bytes32, _userAddress: address): bool</text>
+<text text-anchor="start" x="2266.68" y="-758.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getLearner(_learnerAddress: address): (courseId: bytes32[], transactionId: bytes32[], certificateId: bytes32[])</text>
+<text text-anchor="start" x="2266.68" y="-741.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setCourse(_courseId: bytes32, _trainer: address, _name: string, _price: uint256, _isActive: bool, learningOutcome: Constant.CourseLearningOutcome[]): bool</text>
+<text text-anchor="start" x="2266.68" y="-724.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;updateCourse(_courseId: bytes32, _isActive: bool): bool</text>
+<text text-anchor="start" x="2266.68" y="-708.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourse(_courseIds: bytes32[]): (address[], string[], string[], string[], uint256[], bool[])</text>
+<text text-anchor="start" x="2266.68" y="-691.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseById(_courseId: bytes32): (trainer: address, name: string, institute: string, instructor: string, price: uint256, isActive: bool, learningOutcomes: Constant.CourseLearningOutcome[])</text>
+<text text-anchor="start" x="2266.68" y="-674.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByTrainer(_trainer: address): (string[], string[], string[], uint256[], bool[])</text>
+<text text-anchor="start" x="2266.68" y="-657.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByLearner(_learner: address): (string[], string[], string[], uint256[], bool[])</text>
+<text text-anchor="start" x="2266.68" y="-640.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;countCourseByLearner(_learner: address): uint256</text>
+<text text-anchor="start" x="2266.68" y="-624.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransaction(_transactionId: bytes32[]): address[]</text>
+<text text-anchor="start" x="2266.68" y="-607.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransactionByTrainer(_trainer: address): address[]</text>
+<text text-anchor="start" x="2266.68" y="-590.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransactionByLearner(_learner: address): address[]</text>
+<text text-anchor="start" x="2266.68" y="-573.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;setCertificate(_certId: bytes32, _candidateAddress: address, _courseId: bytes32, _score: uint256[], _issuanceTime: uint256): bool</text>
+<text text-anchor="start" x="2266.68" y="-556.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;generateCertificate(_certificateId: bytes32): (certId: bytes32, candidateAddress: address, candidateName: string, issuerAddress: address, issuerName: string, courseName: string, institute: string, learningOutcomes: Constant.CourseLearningOutcome[], issuanceTime: uint256)</text>
+<text text-anchor="start" x="2266.68" y="-540.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCertificateByLearner(_learner: address): (bytes32[], address[], string[], string[], uint256[])</text>
+<text text-anchor="start" x="2266.68" y="-523.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;checkCertificate(_certificateId: bytes32, _learner: address): bool</text>
 </g>
 <!-- 3&#45;&gt;5 -->
 <g id="edge2" class="edge">
 <title>3&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M1138.9,-368.93C1270.61,-410.65 1421.63,-452.79 1562.23,-478.6 1791.39,-520.67 1857.53,-465.22 2085.23,-514.6 2099.34,-517.66 2113.53,-520.91 2127.77,-524.34"/>
-<polygon fill="black" stroke="black" points="2127.1,-527.77 2137.64,-526.73 2128.75,-520.97 2127.1,-527.77"/>
+<path fill="none" stroke="black" d="M1144.12,-368.96C1274.69,-410.04 1423.64,-451.76 1562.23,-478.6 1740.51,-513.13 1790.77,-480.99 1969.23,-514.6 2060.46,-531.78 2155.05,-553.48 2248.59,-577.4"/>
+<polygon fill="black" stroke="black" points="2247.96,-580.85 2258.51,-579.95 2249.7,-574.07 2247.96,-580.85"/>
 </g>
 <!-- 4 -->
 <g id="node5" class="node">
 <title>4</title>
 <polygon fill="#f2f2f2" stroke="black" points="1570.9,-76.1 1570.9,-402.5 2647.56,-402.5 2647.56,-76.1 1570.9,-76.1"/>
 <text text-anchor="middle" x="2109.23" y="-385.9" font-family="Times,serif" font-size="14.00">RecordChainCourse</text>
-<text text-anchor="middle" x="2109.23" y="-369.1" font-family="Times,serif" font-size="14.00">ContractRecordChainCourse.sol</text>
+<text text-anchor="middle" x="2109.23" y="-369.1" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainCourse.sol</text>
 <polyline fill="none" stroke="black" points="1570.9,-360.9 2647.56,-360.9 "/>
 <text text-anchor="start" x="1578.9" y="-344.3" font-family="Times,serif" font-size="14.00">Private:</text>
 <text text-anchor="start" x="1578.9" y="-327.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;courseId: bytes32[]</text>
@@ -158,198 +158,198 @@
 <!-- 4&#45;&gt;0 -->
 <g id="edge5" class="edge">
 <title>4&#45;&gt;0</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M2106.64,-402.62C2102.17,-682.38 2093.27,-1239.99 2090.85,-1391.4"/>
-<polygon fill="black" stroke="black" points="2087.35,-1391.53 2090.68,-1401.59 2094.34,-1391.64 2087.35,-1391.53"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M2090.81,-402.62C2059.07,-682.38 1995.8,-1239.99 1978.62,-1391.4"/>
+<polygon fill="black" stroke="black" points="1975.11,-1391.26 1977.46,-1401.59 1982.07,-1392.05 1975.11,-1391.26"/>
 </g>
 <!-- 4&#45;&gt;5 -->
 <g id="edge4" class="edge">
 <title>4&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M2333.81,-402.59C2380.05,-435.99 2430.24,-472.26 2481.17,-509.06"/>
-<polygon fill="black" stroke="black" points="2479.19,-511.95 2489.35,-514.97 2483.29,-506.28 2479.19,-511.95"/>
+<path fill="none" stroke="black" d="M2367.2,-402.59C2420.52,-436.13 2478.43,-472.56 2537.18,-509.52"/>
+<polygon fill="black" stroke="black" points="2535.52,-512.61 2545.85,-514.97 2539.25,-506.69 2535.52,-512.61"/>
 </g>
 <!-- 6 -->
 <g id="node6" class="node">
 <title>6</title>
-<polygon fill="#f2f2f2" stroke="black" points="2165.89,-1214.5 2165.89,-1331.3 2366.57,-1331.3 2366.57,-1214.5 2165.89,-1214.5"/>
-<text text-anchor="middle" x="2266.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="2266.23" y="-1297.9" font-family="Times,serif" font-size="14.00">User</text>
-<text text-anchor="middle" x="2266.23" y="-1281.1" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="2165.89,-1272.9 2366.57,-1272.9 "/>
-<text text-anchor="start" x="2173.89" y="-1256.3" font-family="Times,serif" font-size="14.00">name: string</text>
-<text text-anchor="start" x="2173.89" y="-1239.5" font-family="Times,serif" font-size="14.00">phone: string</text>
-<text text-anchor="start" x="2173.89" y="-1222.7" font-family="Times,serif" font-size="14.00">role: bytes32</text>
+<polygon fill="#f2f2f2" stroke="black" points="2020.79,-1214.5 2020.79,-1331.3 2297.67,-1331.3 2297.67,-1214.5 2020.79,-1214.5"/>
+<text text-anchor="middle" x="2159.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="2159.23" y="-1297.9" font-family="Times,serif" font-size="14.00">User</text>
+<text text-anchor="middle" x="2159.23" y="-1281.1" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="2020.79,-1272.9 2297.67,-1272.9 "/>
+<text text-anchor="start" x="2028.79" y="-1256.3" font-family="Times,serif" font-size="14.00">name: string</text>
+<text text-anchor="start" x="2028.79" y="-1239.5" font-family="Times,serif" font-size="14.00">phone: string</text>
+<text text-anchor="start" x="2028.79" y="-1222.7" font-family="Times,serif" font-size="14.00">role: bytes32</text>
 </g>
 <!-- 6&#45;&gt;5 -->
 <g id="edge7" class="edge">
 <title>6&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M2341.45,-1214.41C2355.78,-1202.82 2370.79,-1190.96 2385.23,-1180.4 2398.5,-1170.69 2412.04,-1160.96 2425.76,-1151.23"/>
-<polygon fill="black" stroke="black" points="2425.98,-1151.07 2428.58,-1144.34 2435.78,-1144.14 2433.19,-1150.87 2425.98,-1151.07"/>
+<path fill="none" stroke="black" d="M2257.49,-1214.4C2276.78,-1202.75 2296.99,-1190.87 2316.23,-1180.4 2334.99,-1170.19 2354.1,-1159.96 2373.45,-1149.76"/>
+<polygon fill="black" stroke="black" points="2373.6,-1149.68 2377.05,-1143.35 2384.22,-1144.1 2380.77,-1150.43 2373.6,-1149.68"/>
 </g>
 <!-- 7 -->
 <g id="node7" class="node">
 <title>7</title>
-<polygon fill="#f2f2f2" stroke="black" points="2384.89,-1214.5 2384.89,-1331.3 2585.57,-1331.3 2585.57,-1214.5 2384.89,-1214.5"/>
-<text text-anchor="middle" x="2485.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="2485.23" y="-1297.9" font-family="Times,serif" font-size="14.00">Institute</text>
-<text text-anchor="middle" x="2485.23" y="-1281.1" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="2384.89,-1272.9 2585.57,-1272.9 "/>
-<text text-anchor="start" x="2392.89" y="-1256.3" font-family="Times,serif" font-size="14.00">name: string</text>
-<text text-anchor="start" x="2392.89" y="-1239.5" font-family="Times,serif" font-size="14.00">category: string</text>
-<text text-anchor="start" x="2392.89" y="-1222.7" font-family="Times,serif" font-size="14.00">trainer: address[]</text>
+<polygon fill="#f2f2f2" stroke="black" points="2315.79,-1214.5 2315.79,-1331.3 2592.67,-1331.3 2592.67,-1214.5 2315.79,-1214.5"/>
+<text text-anchor="middle" x="2454.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="2454.23" y="-1297.9" font-family="Times,serif" font-size="14.00">Institute</text>
+<text text-anchor="middle" x="2454.23" y="-1281.1" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="2315.79,-1272.9 2592.67,-1272.9 "/>
+<text text-anchor="start" x="2323.79" y="-1256.3" font-family="Times,serif" font-size="14.00">name: string</text>
+<text text-anchor="start" x="2323.79" y="-1239.5" font-family="Times,serif" font-size="14.00">category: string</text>
+<text text-anchor="start" x="2323.79" y="-1222.7" font-family="Times,serif" font-size="14.00">trainer: address[]</text>
 </g>
 <!-- 7&#45;&gt;5 -->
 <g id="edge8" class="edge">
 <title>7&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M2546.93,-1214.48C2565.24,-1196.6 2586.65,-1175.48 2609.8,-1152.49"/>
-<polygon fill="black" stroke="black" points="2609.89,-1152.39 2611.33,-1145.33 2618.4,-1143.93 2616.97,-1151 2609.89,-1152.39"/>
+<path fill="none" stroke="black" d="M2535.7,-1214.48C2560.6,-1196.29 2589.86,-1174.74 2621.56,-1151.27"/>
+<polygon fill="black" stroke="black" points="2621.82,-1151.07 2624.27,-1144.29 2631.47,-1143.93 2629.03,-1150.72 2621.82,-1151.07"/>
 </g>
 <!-- 8 -->
 <g id="node8" class="node">
 <title>8</title>
-<polygon fill="#f2f2f2" stroke="black" points="2603.89,-1214.5 2603.89,-1331.3 2804.57,-1331.3 2804.57,-1214.5 2603.89,-1214.5"/>
-<text text-anchor="middle" x="2704.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="2704.23" y="-1297.9" font-family="Times,serif" font-size="14.00">Learner</text>
-<text text-anchor="middle" x="2704.23" y="-1281.1" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="2603.89,-1272.9 2804.57,-1272.9 "/>
-<text text-anchor="start" x="2611.89" y="-1256.3" font-family="Times,serif" font-size="14.00">courseId: bytes32[]</text>
-<text text-anchor="start" x="2611.89" y="-1239.5" font-family="Times,serif" font-size="14.00">transactionId: bytes32[]</text>
-<text text-anchor="start" x="2611.89" y="-1222.7" font-family="Times,serif" font-size="14.00">certificateId: bytes32[]</text>
+<polygon fill="#f2f2f2" stroke="black" points="2610.79,-1214.5 2610.79,-1331.3 2887.67,-1331.3 2887.67,-1214.5 2610.79,-1214.5"/>
+<text text-anchor="middle" x="2749.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="2749.23" y="-1297.9" font-family="Times,serif" font-size="14.00">Learner</text>
+<text text-anchor="middle" x="2749.23" y="-1281.1" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="2610.79,-1272.9 2887.67,-1272.9 "/>
+<text text-anchor="start" x="2618.79" y="-1256.3" font-family="Times,serif" font-size="14.00">courseId: bytes32[]</text>
+<text text-anchor="start" x="2618.79" y="-1239.5" font-family="Times,serif" font-size="14.00">transactionId: bytes32[]</text>
+<text text-anchor="start" x="2618.79" y="-1222.7" font-family="Times,serif" font-size="14.00">certificateId: bytes32[]</text>
 </g>
 <!-- 8&#45;&gt;5 -->
 <g id="edge9" class="edge">
 <title>8&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M2737.44,-1214.48C2746.55,-1197.23 2757.05,-1176.96 2768.32,-1154.9"/>
-<polygon fill="black" stroke="black" points="2768.46,-1154.62 2767.62,-1147.46 2773.91,-1143.93 2774.75,-1151.09 2768.46,-1154.62"/>
+<path fill="none" stroke="black" d="M2792.33,-1214.48C2804.57,-1196.99 2818.78,-1176.41 2834.08,-1154"/>
+<polygon fill="black" stroke="black" points="2834.18,-1153.85 2834.26,-1146.64 2840.94,-1143.93 2840.87,-1151.14 2834.18,-1153.85"/>
 </g>
 <!-- 9 -->
 <g id="node9" class="node">
 <title>9</title>
-<polygon fill="#f2f2f2" stroke="black" points="2822.89,-1214.5 2822.89,-1331.3 3023.57,-1331.3 3023.57,-1214.5 2822.89,-1214.5"/>
-<text text-anchor="middle" x="2923.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="2923.23" y="-1297.9" font-family="Times,serif" font-size="14.00">Trainer</text>
-<text text-anchor="middle" x="2923.23" y="-1281.1" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="2822.89,-1272.9 3023.57,-1272.9 "/>
-<text text-anchor="start" x="2830.89" y="-1256.3" font-family="Times,serif" font-size="14.00">institute: string</text>
-<text text-anchor="start" x="2830.89" y="-1239.5" font-family="Times,serif" font-size="14.00">courseId: bytes32[]</text>
-<text text-anchor="start" x="2830.89" y="-1222.7" font-family="Times,serif" font-size="14.00">transactionId: bytes32[]</text>
+<polygon fill="#f2f2f2" stroke="black" points="2905.79,-1214.5 2905.79,-1331.3 3182.67,-1331.3 3182.67,-1214.5 2905.79,-1214.5"/>
+<text text-anchor="middle" x="3044.23" y="-1314.7" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="3044.23" y="-1297.9" font-family="Times,serif" font-size="14.00">Trainer</text>
+<text text-anchor="middle" x="3044.23" y="-1281.1" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="2905.79,-1272.9 3182.67,-1272.9 "/>
+<text text-anchor="start" x="2913.79" y="-1256.3" font-family="Times,serif" font-size="14.00">institute: string</text>
+<text text-anchor="start" x="2913.79" y="-1239.5" font-family="Times,serif" font-size="14.00">courseId: bytes32[]</text>
+<text text-anchor="start" x="2913.79" y="-1222.7" font-family="Times,serif" font-size="14.00">transactionId: bytes32[]</text>
 </g>
 <!-- 9&#45;&gt;5 -->
 <g id="edge10" class="edge">
 <title>9&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M2927.95,-1214.48C2928.49,-1197.54 2928.93,-1177.69 2929.25,-1156.1"/>
-<polygon fill="black" stroke="black" points="2929.25,-1155.93 2925.34,-1149.88 2929.42,-1143.93 2933.34,-1149.99 2929.25,-1155.93"/>
+<path fill="none" stroke="black" d="M3048.95,-1214.48C3049.49,-1197.54 3049.93,-1177.69 3050.25,-1156.1"/>
+<polygon fill="black" stroke="black" points="3050.25,-1155.93 3046.34,-1149.88 3050.42,-1143.93 3054.34,-1149.99 3050.25,-1155.93"/>
 </g>
 <!-- 10 -->
 <g id="node10" class="node">
 <title>10</title>
-<polygon fill="#f2f2f2" stroke="black" points="3260.16,-1180.9 3260.16,-1364.9 3590.3,-1364.9 3590.3,-1180.9 3260.16,-1180.9"/>
-<text text-anchor="middle" x="3425.23" y="-1348.3" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="3425.23" y="-1331.5" font-family="Times,serif" font-size="14.00">Course</text>
-<text text-anchor="middle" x="3425.23" y="-1314.7" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="3260.16,-1306.5 3590.3,-1306.5 "/>
-<text text-anchor="start" x="3268.16" y="-1289.9" font-family="Times,serif" font-size="14.00">trainer: address</text>
-<text text-anchor="start" x="3268.16" y="-1273.1" font-family="Times,serif" font-size="14.00">name: string</text>
-<text text-anchor="start" x="3268.16" y="-1256.3" font-family="Times,serif" font-size="14.00">institute: string</text>
-<text text-anchor="start" x="3268.16" y="-1239.5" font-family="Times,serif" font-size="14.00">instructor: string</text>
-<text text-anchor="start" x="3268.16" y="-1222.7" font-family="Times,serif" font-size="14.00">price: uint256</text>
-<text text-anchor="start" x="3268.16" y="-1205.9" font-family="Times,serif" font-size="14.00">isActive: bool</text>
-<text text-anchor="start" x="3268.16" y="-1189.1" font-family="Times,serif" font-size="14.00">learningOutcomes: Constant.CourseLearningOutcome[]</text>
+<polygon fill="#f2f2f2" stroke="black" points="3496.16,-1180.9 3496.16,-1364.9 3826.3,-1364.9 3826.3,-1180.9 3496.16,-1180.9"/>
+<text text-anchor="middle" x="3661.23" y="-1348.3" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="3661.23" y="-1331.5" font-family="Times,serif" font-size="14.00">Course</text>
+<text text-anchor="middle" x="3661.23" y="-1314.7" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="3496.16,-1306.5 3826.3,-1306.5 "/>
+<text text-anchor="start" x="3504.16" y="-1289.9" font-family="Times,serif" font-size="14.00">trainer: address</text>
+<text text-anchor="start" x="3504.16" y="-1273.1" font-family="Times,serif" font-size="14.00">name: string</text>
+<text text-anchor="start" x="3504.16" y="-1256.3" font-family="Times,serif" font-size="14.00">institute: string</text>
+<text text-anchor="start" x="3504.16" y="-1239.5" font-family="Times,serif" font-size="14.00">instructor: string</text>
+<text text-anchor="start" x="3504.16" y="-1222.7" font-family="Times,serif" font-size="14.00">price: uint256</text>
+<text text-anchor="start" x="3504.16" y="-1205.9" font-family="Times,serif" font-size="14.00">isActive: bool</text>
+<text text-anchor="start" x="3504.16" y="-1189.1" font-family="Times,serif" font-size="14.00">learningOutcomes: Constant.CourseLearningOutcome[]</text>
 </g>
 <!-- 10&#45;&gt;0 -->
 <g id="edge6" class="edge">
 <title>10&#45;&gt;0</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M3260.13,-1362.78C3257.16,-1363.71 3254.19,-1364.58 3251.23,-1365.4 3046.31,-1422.09 2392.61,-1429.29 2167.37,-1430.07"/>
-<polygon fill="black" stroke="black" points="2167.28,-1426.57 2157.29,-1430.1 2167.3,-1433.57 2167.28,-1426.57"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M3495.68,-1362.68C3492.53,-1363.65 3489.38,-1364.56 3486.23,-1365.4 3352.88,-1401.2 2419.16,-1421.83 2089.31,-1428.07"/>
+<polygon fill="black" stroke="black" points="2089.18,-1424.57 2079.25,-1428.25 2089.32,-1431.57 2089.18,-1424.57"/>
 </g>
 <!-- 10&#45;&gt;5 -->
 <g id="edge11" class="edge">
 <title>10&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M3326.98,-1180.59C3316.79,-1171.47 3306.06,-1161.89 3294.91,-1151.96"/>
-<polygon fill="black" stroke="black" points="3294.85,-1151.91 3287.71,-1150.91 3285.88,-1143.93 3293.02,-1144.93 3294.85,-1151.91"/>
+<path fill="none" stroke="black" d="M3539.45,-1180.78C3526.45,-1171.34 3512.74,-1161.42 3498.49,-1151.12"/>
+<polygon fill="black" stroke="black" points="3498.27,-1150.96 3491.06,-1150.69 3488.54,-1143.93 3495.75,-1144.2 3498.27,-1150.96"/>
 </g>
 <!-- 11 -->
 <g id="node11" class="node">
 <title>11</title>
-<polygon fill="#f2f2f2" stroke="black" points="3041.89,-1206.1 3041.89,-1339.7 3242.57,-1339.7 3242.57,-1206.1 3041.89,-1206.1"/>
-<text text-anchor="middle" x="3142.23" y="-1323.1" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
-<text text-anchor="middle" x="3142.23" y="-1306.3" font-family="Times,serif" font-size="14.00">Certificate</text>
-<text text-anchor="middle" x="3142.23" y="-1289.5" font-family="Times,serif" font-size="14.00">ContractRecordChainStorage.sol</text>
-<polyline fill="none" stroke="black" points="3041.89,-1281.3 3242.57,-1281.3 "/>
-<text text-anchor="start" x="3049.89" y="-1264.7" font-family="Times,serif" font-size="14.00">candidateAddress: address</text>
-<text text-anchor="start" x="3049.89" y="-1247.9" font-family="Times,serif" font-size="14.00">courseId: bytes32</text>
-<text text-anchor="start" x="3049.89" y="-1231.1" font-family="Times,serif" font-size="14.00">score: uint256[]</text>
-<text text-anchor="start" x="3049.89" y="-1214.3" font-family="Times,serif" font-size="14.00">issuanceTime: uint256</text>
+<polygon fill="#f2f2f2" stroke="black" points="3200.79,-1206.1 3200.79,-1339.7 3477.67,-1339.7 3477.67,-1206.1 3200.79,-1206.1"/>
+<text text-anchor="middle" x="3339.23" y="-1323.1" font-family="Times,serif" font-size="14.00">&lt;&lt;Struct&gt;&gt;</text>
+<text text-anchor="middle" x="3339.23" y="-1306.3" font-family="Times,serif" font-size="14.00">Certificate</text>
+<text text-anchor="middle" x="3339.23" y="-1289.5" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainStorage.sol</text>
+<polyline fill="none" stroke="black" points="3200.79,-1281.3 3477.67,-1281.3 "/>
+<text text-anchor="start" x="3208.79" y="-1264.7" font-family="Times,serif" font-size="14.00">candidateAddress: address</text>
+<text text-anchor="start" x="3208.79" y="-1247.9" font-family="Times,serif" font-size="14.00">courseId: bytes32</text>
+<text text-anchor="start" x="3208.79" y="-1231.1" font-family="Times,serif" font-size="14.00">score: uint256[]</text>
+<text text-anchor="start" x="3208.79" y="-1214.3" font-family="Times,serif" font-size="14.00">issuanceTime: uint256</text>
 </g>
 <!-- 11&#45;&gt;5 -->
 <g id="edge12" class="edge">
 <title>11&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M3114.45,-1205.87C3107.32,-1190.64 3099.13,-1173.42 3090.24,-1154.95"/>
-<polygon fill="black" stroke="black" points="3090.14,-1154.74 3083.93,-1151.07 3084.93,-1143.93 3091.14,-1147.6 3090.14,-1154.74"/>
+<path fill="none" stroke="black" d="M3300.08,-1205.87C3290.19,-1190.42 3278.86,-1172.94 3266.6,-1154.17"/>
+<polygon fill="black" stroke="black" points="3266.47,-1153.97 3259.83,-1151.14 3259.89,-1143.93 3266.53,-1146.76 3266.47,-1153.97"/>
 </g>
 <!-- 5&#45;&gt;0 -->
 <g id="edge19" class="edge">
 <title>5&#45;&gt;0</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M3586.89,-1144.22C3653.41,-1213.1 3672.87,-1288.54 3599.23,-1365.4 3549.31,-1417.5 2469.39,-1427.84 2167.83,-1429.71"/>
-<polygon fill="black" stroke="black" points="2167.41,-1426.22 2157.43,-1429.78 2167.45,-1433.22 2167.41,-1426.22"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M3827.22,-1144.02C3894.98,-1210.8 3912.39,-1285.51 3835.23,-1365.4 3774.46,-1428.31 2486.09,-1431.09 2089.42,-1430.45"/>
+<polygon fill="black" stroke="black" points="2089.37,-1426.95 2079.37,-1430.43 2089.36,-1433.95 2089.37,-1426.95"/>
 </g>
 <!-- 5&#45;&gt;6 -->
 <g id="edge13" class="edge">
 <title>5&#45;&gt;6</title>
-<path fill="none" stroke="black" d="M2417.79,-1144.14C2400.62,-1156.23 2383.72,-1168.34 2367.23,-1180.4 2355.5,-1188.98 2343.39,-1198.41 2331.79,-1207.87"/>
-<polygon fill="black" stroke="black" points="2329.34,-1205.35 2323.85,-1214.41 2333.79,-1210.75 2329.34,-1205.35"/>
+<path fill="none" stroke="black" d="M2366.23,-1144.1C2343.19,-1156.18 2320.47,-1168.3 2298.23,-1180.4 2282,-1189.23 2265.07,-1199.07 2248.84,-1208.93"/>
+<polygon fill="black" stroke="black" points="2246.6,-1206.19 2239.9,-1214.4 2250.25,-1212.17 2246.6,-1206.19"/>
 </g>
 <!-- 5&#45;&gt;7 -->
 <g id="edge16" class="edge">
 <title>5&#45;&gt;7</title>
-<path fill="none" stroke="black" d="M2606.02,-1143.93C2583.27,-1167.16 2562.3,-1188.71 2544.43,-1207.26"/>
-<polygon fill="black" stroke="black" points="2541.9,-1204.85 2537.49,-1214.48 2546.94,-1209.7 2541.9,-1204.85"/>
+<path fill="none" stroke="black" d="M2619.09,-1143.93C2587.79,-1167.57 2558.94,-1189.48 2534.41,-1208.24"/>
+<polygon fill="black" stroke="black" points="2532.07,-1205.62 2526.26,-1214.48 2536.33,-1211.18 2532.07,-1205.62"/>
 </g>
 <!-- 5&#45;&gt;8 -->
 <g id="edge17" class="edge">
 <title>5&#45;&gt;8</title>
-<path fill="none" stroke="black" d="M2761.53,-1143.93C2750.7,-1166.34 2740.76,-1187.19 2732.29,-1205.28"/>
-<polygon fill="black" stroke="black" points="2729.05,-1203.94 2728,-1214.48 2735.39,-1206.89 2729.05,-1203.94"/>
+<path fill="none" stroke="black" d="M2828.56,-1143.93C2813.74,-1166.54 2800.09,-1187.57 2788.44,-1205.77"/>
+<polygon fill="black" stroke="black" points="2785.31,-1204.17 2782.88,-1214.48 2791.21,-1207.93 2785.31,-1204.17"/>
 </g>
 <!-- 5&#45;&gt;9 -->
 <g id="edge18" class="edge">
 <title>5&#45;&gt;9</title>
-<path fill="none" stroke="black" d="M2917.04,-1143.93C2917.32,-1165.93 2917.71,-1186.42 2918.2,-1204.28"/>
-<polygon fill="black" stroke="black" points="2914.71,-1204.59 2918.51,-1214.48 2921.71,-1204.38 2914.71,-1204.59"/>
+<path fill="none" stroke="black" d="M3038.04,-1143.93C3038.32,-1165.93 3038.71,-1186.42 3039.2,-1204.28"/>
+<polygon fill="black" stroke="black" points="3035.71,-1204.59 3039.51,-1214.48 3042.71,-1204.38 3035.71,-1204.59"/>
 </g>
 <!-- 5&#45;&gt;10 -->
 <g id="edge14" class="edge">
 <title>5&#45;&gt;10</title>
-<path fill="none" stroke="black" d="M3273.5,-1143.93C3285.47,-1154.34 3297.07,-1164.4 3308.19,-1174.01"/>
-<polygon fill="black" stroke="black" points="3305.94,-1176.7 3315.8,-1180.59 3310.52,-1171.41 3305.94,-1176.7"/>
+<path fill="none" stroke="black" d="M3476.16,-1143.93C3491.34,-1154.69 3506.05,-1165.1 3520.09,-1175.01"/>
+<polygon fill="black" stroke="black" points="3518.09,-1177.88 3528.28,-1180.78 3522.13,-1172.16 3518.09,-1177.88"/>
 </g>
 <!-- 5&#45;&gt;11 -->
 <g id="edge15" class="edge">
 <title>5&#45;&gt;11</title>
-<path fill="none" stroke="black" d="M3072.55,-1143.93C3082.19,-1162.87 3091.35,-1180.69 3099.68,-1196.68"/>
-<polygon fill="black" stroke="black" points="3096.76,-1198.63 3104.49,-1205.87 3102.96,-1195.39 3096.76,-1198.63"/>
+<path fill="none" stroke="black" d="M3247.52,-1143.93C3260.65,-1163.22 3273.1,-1181.36 3284.35,-1197.57"/>
+<polygon fill="black" stroke="black" points="3281.54,-1199.66 3290.12,-1205.87 3287.29,-1195.67 3281.54,-1199.66"/>
 </g>
 <!-- 12 -->
 <g id="node13" class="node">
 <title>12</title>
-<polygon fill="#f2f2f2" stroke="black" points="4637.23,-787.9 4637.23,-871.1 4861.23,-871.1 4861.23,-787.9 4637.23,-787.9"/>
-<text text-anchor="middle" x="4749.23" y="-854.5" font-family="Times,serif" font-size="14.00">&lt;&lt;Constant&gt;&gt;</text>
-<text text-anchor="middle" x="4749.23" y="-837.7" font-family="Times,serif" font-size="14.00">REWARD</text>
-<text text-anchor="middle" x="4749.23" y="-820.9" font-family="Times,serif" font-size="14.00">ContractRecordChainTransaction.sol</text>
-<polyline fill="none" stroke="black" points="4637.23,-812.7 4861.23,-812.7 "/>
-<text text-anchor="start" x="4645.23" y="-796.1" font-family="Times,serif" font-size="14.00">REWARD: uint256</text>
+<polygon fill="#f2f2f2" stroke="black" points="4639.13,-787.9 4639.13,-871.1 4939.32,-871.1 4939.32,-787.9 4639.13,-787.9"/>
+<text text-anchor="middle" x="4789.23" y="-854.5" font-family="Times,serif" font-size="14.00">&lt;&lt;Constant&gt;&gt;</text>
+<text text-anchor="middle" x="4789.23" y="-837.7" font-family="Times,serif" font-size="14.00">REWARD</text>
+<text text-anchor="middle" x="4789.23" y="-820.9" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainTransaction.sol</text>
+<polyline fill="none" stroke="black" points="4639.13,-812.7 4939.32,-812.7 "/>
+<text text-anchor="start" x="4647.13" y="-796.1" font-family="Times,serif" font-size="14.00">REWARD: uint256</text>
 </g>
 <!-- 13 -->
 <g id="node14" class="node">
 <title>13</title>
 <polygon fill="#f2f2f2" stroke="black" points="4514.05,-25.7 4514.05,-452.9 5256.41,-452.9 5256.41,-25.7 4514.05,-25.7"/>
 <text text-anchor="middle" x="4885.23" y="-436.3" font-family="Times,serif" font-size="14.00">TransactionRegistry</text>
-<text text-anchor="middle" x="4885.23" y="-419.5" font-family="Times,serif" font-size="14.00">ContractRecordChainTransaction.sol</text>
+<text text-anchor="middle" x="4885.23" y="-419.5" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainTransaction.sol</text>
 <polyline fill="none" stroke="black" points="4514.05,-411.3 5256.41,-411.3 "/>
 <text text-anchor="start" x="4522.05" y="-394.7" font-family="Times,serif" font-size="14.00">Private:</text>
 <text text-anchor="start" x="4522.05" y="-377.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;recordAddress: address</text>
 <text text-anchor="start" x="4522.05" y="-361.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;transactionId: bytes32[]</text>
-<text text-anchor="start" x="4522.05" y="-344.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;limit: uint256</text>
-<text text-anchor="start" x="4522.05" y="-327.5" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="4522.05" y="-344.3" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="4522.05" y="-327.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;limit: uint256</text>
 <text text-anchor="start" x="4522.05" y="-310.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;recordChain: RecordChainStorage</text>
 <polyline fill="none" stroke="black" points="4514.05,-302.5 5256.41,-302.5 "/>
 <text text-anchor="start" x="4522.05" y="-285.9" font-family="Times,serif" font-size="14.00">Private:</text>
@@ -372,27 +372,27 @@
 <!-- 13&#45;&gt;2 -->
 <g id="edge20" class="edge">
 <title>13&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M4652.28,-453.07C4559.81,-537.52 4456.71,-631.69 4376.9,-704.58"/>
-<polygon fill="none" stroke="black" points="4369.58,-697.05 4354.51,-725.04 4383.74,-712.56 4369.58,-697.05"/>
+<path fill="none" stroke="black" d="M4667.11,-453.07C4580.9,-537.16 4484.82,-630.88 4410.22,-703.65"/>
+<polygon fill="none" stroke="black" points="4402.44,-696.57 4388.3,-725.04 4417.1,-711.61 4402.44,-696.57"/>
 </g>
 <!-- 13&#45;&gt;5 -->
 <g id="edge21" class="edge">
 <title>13&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M4569.92,-453C4548.2,-462.77 4526.21,-471.45 4504.23,-478.6 4286.45,-549.42 4215.61,-474.05 3990.23,-514.6 3901.53,-530.56 3809.7,-551.13 3718.84,-574.11"/>
-<polygon fill="black" stroke="black" points="3717.75,-570.78 3708.91,-576.63 3719.47,-577.56 3717.75,-570.78"/>
+<path fill="none" stroke="black" d="M4569.59,-452.96C4547.98,-462.72 4526.09,-471.42 4504.23,-478.6 4303.93,-544.41 4238.19,-474.38 4031.23,-514.6 3968.48,-526.79 3904.13,-541.66 3839.82,-558.21"/>
+<polygon fill="black" stroke="black" points="3838.72,-554.88 3829.92,-560.77 3840.48,-561.65 3838.72,-554.88"/>
 </g>
 <!-- 13&#45;&gt;12 -->
 <g id="edge22" class="edge">
 <title>13&#45;&gt;12</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M4836.03,-453.07C4809,-570.01 4777.65,-705.56 4761.02,-777.5"/>
-<polygon fill="black" stroke="black" points="4757.52,-777.11 4758.68,-787.64 4764.34,-778.69 4757.52,-777.11"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M4850.5,-453.07C4831.42,-570.01 4809.29,-705.56 4797.55,-777.5"/>
+<polygon fill="black" stroke="black" points="4794.05,-777.21 4795.9,-787.64 4800.96,-778.33 4794.05,-777.21"/>
 </g>
 <!-- 14 -->
 <g id="node15" class="node">
 <title>14</title>
 <polygon fill="#f2f2f2" stroke="black" points="3440.81,-0.5 3440.81,-478.1 4495.65,-478.1 4495.65,-0.5 3440.81,-0.5"/>
 <text text-anchor="middle" x="3968.23" y="-461.5" font-family="Times,serif" font-size="14.00">TransactionCourse</text>
-<text text-anchor="middle" x="3968.23" y="-444.7" font-family="Times,serif" font-size="14.00">ContractRecordChainTransaction.sol</text>
+<text text-anchor="middle" x="3968.23" y="-444.7" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainTransaction.sol</text>
 <polyline fill="none" stroke="black" points="3440.81,-436.5 4495.65,-436.5 "/>
 <text text-anchor="start" x="3448.81" y="-419.9" font-family="Times,serif" font-size="14.00">Private:</text>
 <text text-anchor="start" x="3448.81" y="-403.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;courseId: bytes32</text>
@@ -424,21 +424,21 @@
 <!-- 14&#45;&gt;5 -->
 <g id="edge23" class="edge">
 <title>14&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M3545.45,-478.27C3526.88,-488.72 3508.13,-499.28 3489.31,-509.87"/>
-<polygon fill="black" stroke="black" points="3487.36,-506.95 3480.36,-514.91 3490.79,-513.05 3487.36,-506.95"/>
+<path fill="none" stroke="black" d="M3594.4,-478.27C3578.2,-488.58 3561.86,-498.99 3545.44,-509.44"/>
+<polygon fill="black" stroke="black" points="3543.41,-506.58 3536.85,-514.91 3547.17,-512.49 3543.41,-506.58"/>
 </g>
 <!-- 14&#45;&gt;12 -->
 <g id="edge24" class="edge">
 <title>14&#45;&gt;12</title>
-<path fill="none" stroke="black" stroke-dasharray="5,2" d="M4444.46,-478.15C4460.92,-489.96 4476.9,-502.12 4492.23,-514.6 4588.53,-593.03 4674.1,-712.34 4718.03,-779.01"/>
-<polygon fill="black" stroke="black" points="4715.29,-781.21 4723.69,-787.66 4721.15,-777.38 4715.29,-781.21"/>
+<path fill="none" stroke="black" stroke-dasharray="5,2" d="M4483.96,-478.19C4500.93,-489.94 4517.41,-502.08 4533.23,-514.6 4630.74,-591.74 4715.67,-712.06 4758.89,-779.12"/>
+<polygon fill="black" stroke="black" points="4756.12,-781.28 4764.45,-787.82 4762.01,-777.51 4756.12,-781.28"/>
 </g>
 <!-- 15 -->
 <g id="node16" class="node">
 <title>15</title>
 <polygon fill="#f2f2f2" stroke="black" points="2665.85,-0.5 2665.85,-478.1 3422.6,-478.1 3422.6,-0.5 2665.85,-0.5"/>
 <text text-anchor="middle" x="3044.23" y="-461.5" font-family="Times,serif" font-size="14.00">RecordChainUser</text>
-<text text-anchor="middle" x="3044.23" y="-444.7" font-family="Times,serif" font-size="14.00">ContractRecordChainUser.sol</text>
+<text text-anchor="middle" x="3044.23" y="-444.7" font-family="Times,serif" font-size="14.00">RecordChaincontractsRecordChainUser.sol</text>
 <polyline fill="none" stroke="black" points="2665.85,-436.5 3422.6,-436.5 "/>
 <text text-anchor="start" x="2673.85" y="-419.9" font-family="Times,serif" font-size="14.00">Private:</text>
 <text text-anchor="start" x="2673.85" y="-403.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;instituteId: bytes32[]</text>
@@ -470,14 +470,14 @@
 <!-- 15&#45;&gt;2 -->
 <g id="edge25" class="edge">
 <title>15&#45;&gt;2</title>
-<path fill="none" stroke="black" d="M3422.72,-475.17C3425.89,-476.34 3429.06,-477.49 3432.23,-478.6 3553.1,-521.08 3597.15,-472.74 3718.23,-514.6 3848.19,-559.53 3980.86,-639.64 4080.06,-707.68"/>
-<polygon fill="none" stroke="black" points="4074.24,-716.42 4104.86,-724.92 4086.22,-699.17 4074.24,-716.42"/>
+<path fill="none" stroke="black" d="M3422.66,-475.34C3425.85,-476.46 3429.04,-477.54 3432.23,-478.6 3604.63,-535.64 3668.79,-451.93 3839.23,-514.6 3954.02,-556.81 4066.24,-636.86 4149.02,-705.56"/>
+<polygon fill="none" stroke="black" points="4142.41,-713.72 4172.11,-725.06 4155.96,-697.68 4142.41,-713.72"/>
 </g>
 <!-- 15&#45;&gt;5 -->
 <g id="edge26" class="edge">
 <title>15&#45;&gt;5</title>
-<path fill="none" stroke="black" d="M2995.28,-478.27C2993.47,-487.07 2991.64,-495.94 2989.81,-504.84"/>
-<polygon fill="black" stroke="black" points="2986.33,-504.41 2987.74,-514.91 2993.18,-505.82 2986.33,-504.41"/>
+<path fill="none" stroke="black" d="M3044.23,-478.27C3044.23,-487.07 3044.23,-495.94 3044.23,-504.84"/>
+<polygon fill="black" stroke="black" points="3040.73,-504.91 3044.23,-514.91 3047.73,-504.91 3040.73,-504.91"/>
 </g>
 </g>
 </svg>
