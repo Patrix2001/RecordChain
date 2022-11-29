@@ -14,7 +14,7 @@ contract TransactionRegistry is Ownable {
     // State variables
     address private recordAddress;
     bytes32[] private transactionId;
-    uint256 private limit; // max attempt course
+    uint256 public limit; // max attempt course
     RecordChainStorage recordChain;
 
     // Events
