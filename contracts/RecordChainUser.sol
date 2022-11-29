@@ -65,7 +65,7 @@ contract RecordChainUser is Ownable {
             _phone,
             role_byte
         );
-        emit UserUpdate(msg.sender, _name, _phone, _role);
+        emit UserUpdate(_userAddress, _name, _phone, _role);
         return success;
     }
 
