@@ -113,8 +113,8 @@
 <text text-anchor="start" x="2266.68" y="-724.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;updateCourse(_courseId: bytes32, _isActive: bool): bool</text>
 <text text-anchor="start" x="2266.68" y="-708.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourse(_courseIds: bytes32[]): (address[], string[], string[], string[], uint256[], bool[])</text>
 <text text-anchor="start" x="2266.68" y="-691.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseById(_courseId: bytes32): (trainer: address, name: string, institute: string, instructor: string, price: uint256, isActive: bool, learningOutcomes: Constant.CourseLearningOutcome[])</text>
-<text text-anchor="start" x="2266.68" y="-674.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByTrainer(_trainer: address): (string[], string[], string[], uint256[], bool[])</text>
-<text text-anchor="start" x="2266.68" y="-657.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByLearner(_learner: address): (string[], string[], string[], uint256[], bool[])</text>
+<text text-anchor="start" x="2266.68" y="-674.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByTrainer(_trainer: address): (bytes32[], string[], string[], string[], uint256[], bool[])</text>
+<text text-anchor="start" x="2266.68" y="-657.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseByLearner(_learner: address): (bytes32[], string[], string[], string[], uint256[], bool[])</text>
 <text text-anchor="start" x="2266.68" y="-640.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;countCourseByLearner(_learner: address): uint256</text>
 <text text-anchor="start" x="2266.68" y="-624.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransaction(_transactionId: bytes32[]): address[]</text>
 <text text-anchor="start" x="2266.68" y="-607.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getTransactionByTrainer(_trainer: address): address[]</text>
@@ -149,11 +149,11 @@
 <text text-anchor="start" x="1578.9" y="-201.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;&lt;&lt;modifier&gt;&gt; isUser(role: string)</text>
 <text text-anchor="start" x="1578.9" y="-185.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;constructor(_recordChainAddress: address)</text>
 <text text-anchor="start" x="1578.9" y="-168.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseIds(): bytes32[]</text>
-<text text-anchor="start" x="1578.9" y="-151.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;updateCourse(_courseId: uint256, _isActive: bool): bool &lt;&lt;isUser&gt;&gt;</text>
-<text text-anchor="start" x="1578.9" y="-134.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getAllCourse(): (address[], string[], string[], string[], uint256[], bool[])</text>
+<text text-anchor="start" x="1578.9" y="-151.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;updateCourse(_courseId: bytes32, _isActive: bool): bool &lt;&lt;isUser&gt;&gt;</text>
+<text text-anchor="start" x="1578.9" y="-134.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getAllCourse(): (bytes32[], address[], string[], string[], string[], uint256[], bool[])</text>
 <text text-anchor="start" x="1578.9" y="-117.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseId(_courseId: bytes32): (trainer: address, name: string, institute: string, instructor: string, price: uint256, isActive: bool, learningOutcomes: Constant.CourseLearningOutcome[])</text>
-<text text-anchor="start" x="1578.9" y="-101.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseTrainer(): (name: string[], institute: string[], instructor: string[], price: uint256[], isActive: bool[]) &lt;&lt;isUser&gt;&gt;</text>
-<text text-anchor="start" x="1578.9" y="-84.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseLearner(): (name: string[], institute: string[], instructor: string[], price: uint256[], isActive: bool[]) &lt;&lt;isUser&gt;&gt;</text>
+<text text-anchor="start" x="1578.9" y="-101.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseTrainer(): (id: bytes32[], name: string[], institute: string[], instructor: string[], price: uint256[], isActive: bool[]) &lt;&lt;isUser&gt;&gt;</text>
+<text text-anchor="start" x="1578.9" y="-84.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;&#160;getCourseLearner(): (id: bytes32[], name: string[], institute: string[], instructor: string[], price: uint256[], isActive: bool[]) &lt;&lt;isUser&gt;&gt;</text>
 </g>
 <!-- 4&#45;&gt;0 -->
 <g id="edge5" class="edge">
@@ -403,9 +403,9 @@
 <text text-anchor="start" x="3448.81" y="-319.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;creationTime: uint256</text>
 <text text-anchor="start" x="3448.81" y="-302.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;receivalTime: uint256</text>
 <text text-anchor="start" x="3448.81" y="-285.5" font-family="Times,serif" font-size="14.00"> &#160;&#160;credits: uint256</text>
-<text text-anchor="start" x="3448.81" y="-268.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;isRequested: bool</text>
-<text text-anchor="start" x="3448.81" y="-251.9" font-family="Times,serif" font-size="14.00"> &#160;&#160;isSentReward: bool</text>
-<text text-anchor="start" x="3448.81" y="-235.1" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="3448.81" y="-268.7" font-family="Times,serif" font-size="14.00"> &#160;&#160;isSentReward: bool</text>
+<text text-anchor="start" x="3448.81" y="-251.9" font-family="Times,serif" font-size="14.00">Public:</text>
+<text text-anchor="start" x="3448.81" y="-235.1" font-family="Times,serif" font-size="14.00"> &#160;&#160;isRequested: bool</text>
 <text text-anchor="start" x="3448.81" y="-218.3" font-family="Times,serif" font-size="14.00"> &#160;&#160;recordChain: RecordChainStorage</text>
 <polyline fill="none" stroke="black" points="3440.81,-210.1 4495.65,-210.1 "/>
 <text text-anchor="start" x="3448.81" y="-193.5" font-family="Times,serif" font-size="14.00">Private:</text>

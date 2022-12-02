@@ -60,14 +60,13 @@ contract RecordChainCourse {
         return courseId;
     }
 
-    function updateCourse(uint256 _courseId, bool _isActive)
+    function updateCourse(bytes32 _courseId, bool _isActive)
         public
         isUser("TRAINER")
         returns (bool)
     {
-        bytes32 id = courseId[_courseId];
-        bool success = recordChain.updateCourse(id, _isActive);
-        emit UpdateCourse(id, msg.sender, _isActive);
+        bool success = recordChain.updateCourse(_courseId, _isActive);
+        emit UpdateCourse(_courseId, msg.sender, _isActive);
         return success;
     }
 
@@ -75,6 +74,7 @@ contract RecordChainCourse {
         public
         view
         returns (
+            bytes32[] memory,
             address[] memory,
             string[] memory,
             string[] memory,
@@ -92,7 +92,15 @@ contract RecordChainCourse {
         bool[] memory isActive = new bool[](courseNumber);
         (trainer, name, institute, instructor, price, isActive) = recordChain
             .getCourse(courseId);
-        return (trainer, name, institute, instructor, price, isActive);
+        return (
+            courseId,
+            trainer,
+            name,
+            institute,
+            instructor,
+            price,
+            isActive
+        );
     }
 
     function getCourseId(bytes32 _courseId)
@@ -133,6 +141,7 @@ contract RecordChainCourse {
         view
         isUser("TRAINER")
         returns (
+            bytes32[] memory id,
             string[] memory name,
             string[] memory institute,
             string[] memory instructor,
@@ -140,9 +149,9 @@ contract RecordChainCourse {
             bool[] memory isActive
         )
     {
-        (name, institute, instructor, price, isActive) = recordChain
+        (id, name, institute, instructor, price, isActive) = recordChain
             .getCourseByTrainer(msg.sender);
-        return (name, institute, instructor, price, isActive);
+        return (id, name, institute, instructor, price, isActive);
     }
 
     function getCourseLearner()
@@ -150,6 +159,7 @@ contract RecordChainCourse {
         view
         isUser("LEARNER")
         returns (
+            bytes32[] memory id,
             string[] memory name,
             string[] memory institute,
             string[] memory instructor,
@@ -157,8 +167,8 @@ contract RecordChainCourse {
             bool[] memory isActive
         )
     {
-        (name, institute, instructor, price, isActive) = recordChain
+        (id, name, institute, instructor, price, isActive) = recordChain
             .getCourseByLearner(msg.sender);
-        return (name, institute, instructor, price, isActive);
+        return (id, name, institute, instructor, price, isActive);
     }
 }

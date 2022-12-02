@@ -174,7 +174,7 @@ contract TransactionCourse {
     uint256 private creationTime;
     uint256 private receivalTime;
     uint256 private credits = 999e18;
-    bool private isRequested;
+    bool public isRequested;
     bool private isSentReward;
     RecordChainStorage recordChain;
 
@@ -209,7 +209,6 @@ contract TransactionCourse {
     }
 
     function sendCredit() external payable isAlreadyPaid {
-        require(msg.data.length == 0);
         require(checkCertified(), "Need Certify");
         if (!isSentReward) {
             (bool sent, ) = sender.call{value: REWARD}("");
@@ -223,7 +222,6 @@ contract TransactionCourse {
     }
 
     function requestCredit() external payable isAlreadyPaid isAlreadyRequest {
-        require(msg.data.length == 0);
         credits = address(this).balance - REWARD;
         (bool sent, ) = owner.call{value: address(this).balance}("");
         require(sent, "Failed to send Ether");
@@ -231,7 +229,6 @@ contract TransactionCourse {
     }
 
     function payCourse() external payable isAlreadyPaid {
-        require(msg.data.length == 0);
         require(msg.value == credits, "Credits Not Enough");
         (bool paid, ) = recipient.call{value: msg.value}("");
         require(paid, "Failed to send Ether");

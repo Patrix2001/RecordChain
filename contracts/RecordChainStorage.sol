@@ -273,6 +273,7 @@ contract RecordChainStorage {
         public
         view
         returns (
+            bytes32[] memory,
             string[] memory,
             string[] memory,
             string[] memory,
@@ -290,13 +291,14 @@ contract RecordChainStorage {
         (, name, institute, instructor, price, isActive) = getCourse(
             courseList
         );
-        return (name, institute, instructor, price, isActive);
+        return (courseList, name, institute, instructor, price, isActive);
     }
 
     function getCourseByLearner(address _learner)
         public
         view
         returns (
+            bytes32[] memory,
             string[] memory,
             string[] memory,
             string[] memory,
@@ -314,7 +316,7 @@ contract RecordChainStorage {
         (, name, institute, instructor, price, isActive) = getCourse(
             courseList
         );
-        return (name, institute, instructor, price, isActive);
+        return (courseList, name, institute, instructor, price, isActive);
     }
 
     function countCourseByLearner(address _learner)
@@ -435,12 +437,6 @@ contract RecordChainStorage {
                 credits: course.learningOutcomes[i].credits
             });
         }
-        // for (uint256 i = 0; i < learnOutcome; i++) {
-        //     learningOutcomes[i].name = course.learningOutcomes[i].name;
-        //     learningOutcomes[i].weight = course.learningOutcomes[i].weight;
-        //     learningOutcomes[i].score = certificate.score[i];
-        //     learningOutcomes[i].credits = course.learningOutcomes[i].credits;
-        // }
         issuanceTime = certificate.issuanceTime;
 
         return (
